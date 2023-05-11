@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ptit"
+        android:label="PTIT English"
+        android:roundIcon="@drawable/ptit"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.Light">
+        <activity android:name=".Activity.app.DailyWordActivity" />
+        <activity android:name=".Activity.app.ListWordActivity" />
+        <activity android:name=".Activity.app.HomeWorkActivity" />
+        <activity
+            android:name=".Activity.login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.login.ResetPasswordActivity" />
+        <activity android:name=".Activity.login.SignupActivity" />
+        <activity android:name=".Activity.app.MainActivity"/>
+        <activity android:name=".Activity.app.LessonActivity" />
+        <activity android:name=".Activity.app.TopicActivity" />
+
+    </application>
+</manifest>

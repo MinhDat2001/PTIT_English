@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12"
+    tools:context=".Activity.app.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/framecontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="11"
+        android:background="#BCFEEC"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="onSearch2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search"
+            android:visibility="visible"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="onDailyWord"
+            android:scaleType="fitCenter"
+            android:src="@drawable/new_word"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="onHomeWork"
+            android:scaleType="fitCenter"
+            android:src="@drawable/study"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="onTopic"
+            android:scaleType="fitCenter"
+            android:src="@drawable/title"
+
+            ></ImageButton>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
