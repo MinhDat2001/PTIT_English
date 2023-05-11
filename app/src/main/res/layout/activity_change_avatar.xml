@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ProgressBar
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/facebook"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:padding="8dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInput"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profile_image">
+
+        <EditText
+            android:id="@+id/profile_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="User name"
+            android:inputType="textEmailAddress"
+            android:text="Kiều Thị Lan Hương"
+            android:textColor="@color/input_login"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/file_selected" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textInput"
+        android:layout_centerHorizontal="true"
+        android:text="Set" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-9dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/btn_back"
+        android:textColor="#536DFE" />
+
+
+</RelativeLayout>

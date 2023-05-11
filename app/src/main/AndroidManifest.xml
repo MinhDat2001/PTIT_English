@@ -26,6 +26,8 @@
         <activity android:name=".Activity.app.MainActivity"/>
         <activity android:name=".Activity.app.LessonActivity" />
         <activity android:name=".Activity.app.TopicActivity" />
+        <activity android:name=".Activity.app.ChangeAvatarActivity" />
+        <activity android:name=".Activity.app.ChangePasswordActivity" />
 
     </application>
 </manifest>

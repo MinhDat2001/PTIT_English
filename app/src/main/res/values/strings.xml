@@ -41,4 +41,6 @@
     <string name="btn_sign_out">Đăng xuất</string>
     <string name="lbl_forgot_password">Quên mật khẩu?</string>
     <string name="forgot_password_msg">Chúng tôi cần email đăng ký tài khoản của bạn</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close navigation Drawer</string>
 </resources>

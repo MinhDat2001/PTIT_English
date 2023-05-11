@@ -1,0 +1,3 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"><!-- Màu nền của nút -->
+    <corners android:radius="100dp" /> <!-- Bán kính để tạo hình tròn -->
+</shape>
