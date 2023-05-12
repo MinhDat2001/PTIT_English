@@ -48,14 +48,14 @@ public class QuestionTypeAFragment extends Fragment {
         txtTitle = view.findViewById(R.id.textView2);
         btnSpeaker = view.findViewById(R.id.imageButtonSpeaker);
 
-        textToSpeech = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                textToSpeech.setLanguage(Locale.US);
-            }
-        });
-        textToSpeech.setSpeechRate(0.6F);
-        textToSpeech.setPitch(0.8F);
+//        textToSpeech = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
+//            @Override
+//            public void onInit(int status) {
+//                textToSpeech.setLanguage(Locale.US);
+//            }
+//        });
+//        textToSpeech.setSpeechRate(0.6F);
+//        textToSpeech.setPitch(0.8F);
 
         rdgAnswer.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -123,6 +123,6 @@ public class QuestionTypeAFragment extends Fragment {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void playSound(String word) {
         String utteranceId = UUID.randomUUID().toString();
-        textToSpeech.speak(word, TextToSpeech.QUEUE_FLUSH, null, utteranceId);
+//        textToSpeech.speak(word, TextToSpeech.QUEUE_FLUSH, null, utteranceId);
     }
 }

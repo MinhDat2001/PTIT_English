@@ -35,7 +35,7 @@
                 android:background="#FFFFFF"
                 android:onClick="onSearch2"
                 android:scaleType="fitCenter"
-                android:src="@drawable/search"
+                android:src="@drawable/find"
                 android:visibility="visible"></ImageButton>
 
             <ImageButton
@@ -46,7 +46,7 @@
                 android:background="#FFFFFF"
                 android:onClick="onDailyWord"
                 android:scaleType="fitCenter"
-                android:src="@drawable/new_word"></ImageButton>
+                android:src="@drawable/home_work"></ImageButton>
 
             <ImageButton
                 android:id="@+id/button3"
@@ -57,7 +57,7 @@
                 android:background="#FFFFFF"
                 android:onClick="onHomeWork"
                 android:scaleType="fitCenter"
-                android:src="@drawable/study"></ImageButton>
+                android:src="@drawable/book"></ImageButton>
 
             <ImageButton
                 android:id="@+id/button4"
@@ -71,17 +71,6 @@
 
                 ></ImageButton>
 
-            <ImageButton
-                android:id="@+id/button5"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:onClick="onAlarm"
-                android:scaleType="fitCenter"
-                android:src="@drawable/title"
-
-                ></ImageButton>
 
         </LinearLayout>
 

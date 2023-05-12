@@ -27,21 +27,21 @@ public class SearchResultAdapter extends BaseAdapter {
     private final Context context;
     private final int layout;
     private final List<Word> list;
-    private final TextToSpeech textToSpeech;
+//    private final TextToSpeech textToSpeech;
     private final DatabaseAccess databaseAccess;
 
     public SearchResultAdapter(Context context, int layout, List<Word> list) {
         this.context = context;
         this.layout = layout;
         this.list = list;
-        textToSpeech = new TextToSpeech(context, new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                textToSpeech.setLanguage(Locale.US);
-            }
-        });
-        textToSpeech.setSpeechRate(0.6F);
-        textToSpeech.setPitch(0.8F);
+//        textToSpeech = new TextToSpeech(context, new TextToSpeech.OnInitListener() {
+//            @Override
+//            public void onInit(int status) {
+//                textToSpeech.setLanguage(Locale.US);
+//            }
+//        });
+//        textToSpeech.setSpeechRate(0.6F);
+//        textToSpeech.setPitch(0.8F);
         databaseAccess = DatabaseAccess.getInstance(context);
         databaseAccess.open();
     }
@@ -120,6 +120,6 @@ public class SearchResultAdapter extends BaseAdapter {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void playSound(String word) {
         String utteranceId = UUID.randomUUID().toString();
-        textToSpeech.speak(word, TextToSpeech.QUEUE_FLUSH, null, utteranceId);
+//        textToSpeech.speak(word, TextToSpeech.QUEUE_FLUSH, null, utteranceId);
     }
 }

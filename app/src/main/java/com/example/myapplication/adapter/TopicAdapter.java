@@ -17,6 +17,8 @@ import android.widget.PopupMenu;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.cardview.widget.CardView;
+
 import com.example.myapplication.Activity.app.LessonActivity;
 import com.example.myapplication.Activity.app.ListWordActivity;
 import com.example.myapplication.R;
@@ -63,6 +65,21 @@ public class TopicAdapter extends BaseAdapter {
         ProgressBar prgTask = convertView.findViewById(R.id.task_progress_bar2);
         ImageView imgAvt = convertView.findViewById(R.id.imgAvt);
         Topic topic = list.get(position);
+        CardView cv = convertView.findViewById(R.id.cardview);
+
+        cv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ListWordActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("id", String.valueOf(position + 1));
+                intent.putExtras(bundle);
+                context.startActivity(intent);
+            }
+        });
+
+
+
 
         if (topic.getDate() != 0) {
             prgTask.setProgress(100);

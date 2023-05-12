@@ -156,6 +156,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(intent);
     }
 
+
+
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (toggle.onOptionsItemSelected(item)) {
             return true;
@@ -334,6 +336,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         dialog.show();
     }
 
-    public void onAlarm(View view) {
-    }
 }
